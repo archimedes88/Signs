@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Name Signs</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>How much would your name cost?</h1>
+        </div>
+        <img src="img/sign3.jpg" class="img-circle">
+        <h3>Figure how much your name would cost if it were a sign.</h3>
+        <br>
+        <h4>Each letter costs $5</h4>
+        <br>
+        <form ">
+            <div class="form-group">
+                <label>What is your name?</label>
+                <input class="form-control " id="fullName" type="text">
+            </div>
+            <br>
+            <div class="form-group">
+                <label>How many special characters would you like?</label>
+                <input class="form-control" type="number" id="specialChars" value="0">
+            </div>
+            <br>
+            <div class="form-group">
+                <label>How fast would you like to get your sign?</label>
+                <select class="form-control" id="shipping">
+                    <option value="2.99">Standard</option>
+                    <option value="7.99">2 Day</option>
+                    <option value="18.99">Next Day</option>
+                </select>
+            </div>
+            <!-- <p>Your state tax is <span id="stateTax ">VALUE</span>. And comes out to $<span id="totalTax ">TAX AMT</span>.</p> -->
+            <br>
+            <br>
+            <br>
+            <input id="button" class="btn btn-default" type="submit" value="Calculate">
+        </form>
+        <br/>
+        <div id="sub"></div>
+        <div id="tax"></div>
+        <div id="withTax"></div>
+        <div id="addShip"></div>
+        <div id="totalDisplay"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

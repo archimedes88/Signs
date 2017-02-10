@@ -1,0 +1,55 @@
+body {
+    background: #121212;
+    color: #121212;
+}
+
+.container {
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.btn-default {
+    background: #121212;
+    color: #FFFFFF;
+}
+
+.btn-default:visited {
+    background: #121212;
+    color: #FFFFFF;
+}
+
+.btn-default:hover {
+    background: #FFFFFF;
+    color: #121212;
+}
+
+img {
+    float: right;
+    width: 40%;
+    height: auto;
+}
+
+#tax,
+#withTax,
+#addShip {
+    margin-left: 2%;
+}
+
+.form-control {
+    width: 40%;
+    color: #121212;
+}
+
+@media all and (max-width: 650px) {
+    .container {
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .form-control {
+        width: 100%;
+    }
+}
